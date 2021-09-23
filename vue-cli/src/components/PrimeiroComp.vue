@@ -1,7 +1,8 @@
 <template>
     <div>
-        <h1>Olá vue</h1>
+        <h1 class="Alooo">Olá vue</h1>
         <p>Meu nome é {{ name }} e estudo para ser um {{ job }}.</p>
+        <div class="A">Dale :V</div>
     </div>
 </template>
 
