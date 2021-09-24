@@ -11,6 +11,9 @@
         <li>HTML e CSS</li>
         <li>JavaScript</li>
     </ul>
+    <div>
+        <button @click="showEmail">{{ botao_email }}</button>
+    </div>
     <p v-if="mostrarEmail">Mande um email para: {{ email }}</p>
     <p>Para acessar o google <a v-bind:href="google" target="_blank">basta clickar aqui</a></p>
     <Picture />
@@ -19,15 +22,32 @@
 
 <script>
 import Picture from './Picture.vue'
+
 export default {
-  components: { Picture },
     name: "Info",
+
+    components: {
+        Picture
+    },
+
     data() {
         return{
             esta_trabalhando: false,
-            mostrarEmail: true,
+            mostrarEmail: false,
             email: "m.felipe@ufms.br",
-            google: 'https://google.com'
+            google: 'https://google.com',
+            botao_email: 'Mostrar email'
+        }
+    },
+
+    methods: {
+        showEmail() {
+            this.mostrarEmail = !this.mostrarEmail
+            if (!this.mostrarEmail){
+                this.botao_email = 'Mostrar email'
+            } else {
+                this.botao_email = 'Ocultar email'
+            }
         }
     }
 }
