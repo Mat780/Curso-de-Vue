@@ -1,5 +1,6 @@
 <template>
 <div>
+  <Header />
   <body>
     <PrimeiroComp />
     <p>O dado de teste é: {{ dado }}</p>
@@ -14,6 +15,7 @@ import PrimeiroComp from './components/PrimeiroComp.vue'
 import LifeCycle from './components/LifeCycle.vue'
 import Pessoa from './components/pessoa.vue'
 import Style from './components/Style.vue'
+import Header from './components/Header.vue'
 
   export default{
     name: "App",
@@ -21,7 +23,8 @@ import Style from './components/Style.vue'
         PrimeiroComp,
         LifeCycle,
         Pessoa,
-        Style
+        Style,
+        Header
     },
 
     data() {
@@ -32,4 +35,18 @@ import Style from './components/Style.vue'
   }
 </script>
 
+<style>
+  body{
+    background-color: #333;
+    color: #FFF;
+  }
+
+  a {
+    color: red;
+  }
+
+  .teste{
+    background-color: #000;
+  }
+</style>
 

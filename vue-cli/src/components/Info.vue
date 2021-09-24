@@ -15,7 +15,7 @@
         <button @click="showEmail">{{ botao_email }}</button>
     </div>
     <p v-if="mostrarEmail">Mande um email para: {{ email }}</p>
-    <p>Para acessar o google <a v-bind:href="google" target="_blank">basta clickar aqui</a></p>
+    <p class="teste">Para acessar o google <a v-bind:href="google" target="_blank">basta clickar aqui</a></p>
     <Picture />
 </div>
 </template>

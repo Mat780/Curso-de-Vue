@@ -14,7 +14,6 @@ export default {
         setTimeout(() => {
             this.name = "Giovanna"
         }, 1000)
-        this.lifeCycle()
     },
     mounted() {   
         setTimeout(() => {
