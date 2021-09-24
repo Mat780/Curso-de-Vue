@@ -12,17 +12,22 @@
         <li>JavaScript</li>
     </ul>
     <p v-if="mostrarEmail">Mande um email para: {{ email }}</p>
+    <p>Para acessar o google <a v-bind:href="google" target="_blank">basta clickar aqui</a></p>
+    <Picture />
 </div>
 </template>
 
 <script>
+import Picture from './Picture.vue'
 export default {
+  components: { Picture },
     name: "Info",
     data() {
         return{
             esta_trabalhando: false,
             mostrarEmail: true,
-            email: "m.felipe@ufms.br"
+            email: "m.felipe@ufms.br",
+            google: 'https://google.com'
         }
     }
 }
