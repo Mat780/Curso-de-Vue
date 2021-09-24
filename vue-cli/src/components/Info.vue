@@ -34,11 +34,16 @@ export default {
         Picture
     },
 
+    props: {
+        email: String,
+        esta_trabalhando: Boolean
+    },
+
     data() {
         return{
-            esta_trabalhando: false,
+            //esta_trabalhando: false,
             mostrarEmail: false,
-            email: "m.felipe@ufms.br",
+            //email: "m.felipe@ufms.br",
             google: 'https://google.com',
             botao_email: 'Mostrar email',
             backend_tech: ['JavaScript', 'Python', 'C', 'C#'],

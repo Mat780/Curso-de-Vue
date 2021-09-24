@@ -1,6 +1,6 @@
 <template>
 <div>
-  <Header />
+  <Header :esta_logado="false"/>
   <body>
     <PrimeiroComp />
     <p>O dado de teste é: {{ dado }}</p>
