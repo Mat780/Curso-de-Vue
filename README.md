@@ -1,5 +1,4 @@
-# Curso-de-Vue
-### Curso de Vue do youtube
+# Curso de Vue do youtube
 
 
 
